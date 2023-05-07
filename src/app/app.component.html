@@ -1,0 +1,29 @@
+<app-material-custom-table [columns]="columns" [dataUrl]="dataURL" (onViewEvent)="onView($event)"
+  (onEditEvent)="onEdit($event)" (onDeleteConfirmEvent)="onDeleteConfirm($event)"></app-material-custom-table>
+<br>
+<h1>With Custom Data</h1>
+
+
+<app-material-custom-table [columns]="columns" [data]="data" (onViewEvent)="onView($event)"
+  (onEditEvent)="onEdit($event)" (onDeleteConfirmEvent)="onDeleteConfirm($event)"></app-material-custom-table>
+
+<br>
+<h1>Grid without custom action buttoms</h1>
+
+<!--Grid without custom action buttoms-->
+
+<app-material-custom-table [columns]="columns" [dataUrl]="dataURL" (onViewEvent)="onView($event)"
+  (onEditEvent)="onEdit($event)" (onDeleteConfirmEvent)="onDeleteConfirm($event)" [EnableViewButton]="false"
+  [EnableEditButton]="false" [EnableDeleteButton]="false"></app-material-custom-table>
+
+<br>
+<h1>Grid Without Export Buttons</h1>
+<app-material-custom-table [columns]="columns" [dataUrl]="dataURL" (onViewEvent)="onView($event)"
+  (onEditEvent)="onEdit($event)" (onDeleteConfirmEvent)="onDeleteConfirm($event)"
+  [ExportButtons]="false"></app-material-custom-table>
+
+
+<br>
+<h1>Grid Without Selection Column</h1>
+<app-material-custom-table [columns]="columns2" [dataUrl]="dataURL" (onViewEvent)="onView($event)"
+  (onEditEvent)="onEdit($event)" (onDeleteConfirmEvent)="onDeleteConfirm($event)"></app-material-custom-table>
